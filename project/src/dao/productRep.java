@@ -18,11 +18,21 @@ public class productRep {
 	}
 
 	public productRep() {
-		product Product = new product("1234",111,11);	
+		product Product = new product("P1234","»ç¶û",2100000000);
+		Product.setCategory("love");
+		Product.setCondition("ING");
+		Product.setManufacturer("Human");
+		Product.setUnitInStocks(1);
+		Product.setDescirption("don't never give up");
 		listOfproduct.add(Product);
 		
-		
-		
+		product note = new product("P1235", "³ëÆ®", 10000);
+		note.setCategory("note");
+		note.setCondition("new");
+		note.setManufacturer("samsung");
+		note.setUnitInStocks(100);
+		note.setDescirption("don't never give up");
+		listOfproduct.add(note);
 		
 		
 	}

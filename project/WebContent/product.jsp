@@ -5,6 +5,7 @@
 <html>
 <head>
 <title>상품 상세 정보</title>
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 </head>
 <body>
 	<jsp:include page="menu.jsp"/>
