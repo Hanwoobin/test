@@ -3,17 +3,19 @@ package dto;
 import java.io.Serializable;
 
 public class product implements Serializable{
-	private static final long Id = 10000;
+
+	private static final long serialVersionUID = 1L;
+
 	private String code;
 	private String unitInStocks;
 	
-	private String unitPrice;
+	private int unitPrice;
 	
 	public product() {
 		super();
 	}
 	
-	public product(String code, String unitInStocks,String unitPrice){
+	public product(String code, String unitInStocks,int unitPrice){
 		this.code = code;
 		this.unitInStocks = unitInStocks;
 		this.unitPrice = unitPrice;
@@ -32,10 +34,10 @@ public class product implements Serializable{
 	public void setUnitInStocks(String unitInStocks) {
 		this.unitInStocks = unitInStocks;
 	}
-	public String getUnitPrice() {
+	public int getUnitPrice() {
 		return unitPrice;
 	}
-	public void setUnitPrice(String unitPrice) {
+	public void setUnitPrice(int unitPrice) {
 		this.unitPrice = unitPrice;
 	}
 }
