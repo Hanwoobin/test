@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <html>
 	<head><title>로그인 성공</title></head>
 	<body>

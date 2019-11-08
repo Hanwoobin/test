@@ -33,13 +33,15 @@
 			<div class = "col-md-4">
 				<h3><%=Product.getName() %></h3>
 				<p><%=Product.getDescirption() %>
-				<p><%=Product.getUnitInStocks() %>
+				<p><%=Product.getUnitPrice()%>원</p>
+				<a class = "btn btn-info"href="./product.jsp?id=<%=Product.getCode()%>" > 상세정보 </a>
 			</div>
-			<a href="./product.jsp?id=<%=Product.getCode()%>"> 상세정보 </a>
+			
 		</div>
 		<%
 			}
 		%>
+		<hr>
 	</div>
 
 	<jsp:include page="footer.jsp" />

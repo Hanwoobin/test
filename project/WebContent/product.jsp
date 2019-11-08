@@ -14,18 +14,19 @@
 		productRep dao = productRep.getInstance();
 		product Product = dao.getProductById(id);
 	%>
-	<div class="container">
-		<div class="content">
-			<h3>
-				상품 코드<%=Product.getCode()%></h3>
-			<p>
-				재고 :
-				<%=Product.getUnitInStocks()%>
-			<p><%=Product.getUnitPrice()%>원
-			<p>
-				<a href="#">상품주문</a>
-			<p>
-				<a href="./products.jsp">상품 목록</a>
+	<div class = "container">
+		<div class = "row">
+			<div class= "col-md-6">
+				<h3>상품명:<%=Product.getName() %></h3>
+				<p>상품코드<%=Product.getCode() %>
+				<p>가격 : <%=Product.getUnitPrice() %>
+				<p>상세정보 : <%=Product.getDescirption() %>
+				<p>분류:<%=Product.getCategory() %>
+				<p>제조사 : <%=Product.getManufacturer()%>
+				<p>재고수  : <%=Product.getUnitInStocks() %>
+				<p>상태 : <%=Product.getCondition() %>
+				<p> <a href = "./products.jsp" class = "btn btn-info">상품 목록</a>
+			</div>
 		</div>
 	</div>
 </body>
