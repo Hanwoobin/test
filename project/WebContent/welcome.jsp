@@ -7,7 +7,7 @@
 	<%@include file= "menu.jsp" %>
 	<div class = "">
 		<div class = "">
-			
+			<p> welcome!</p>
 		</div>
 	</div>
 	<%@include file = "footer.jsp" %>

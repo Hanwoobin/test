@@ -3,5 +3,5 @@
 <nav>
 		<a href ="login.jsp">로그인</a>
 		<a href ="welecom.jsp">메인화면</a>
-		
+		<a href = "products.jsp">제품 페이지</a>
 </nav>
