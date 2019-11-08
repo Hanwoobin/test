@@ -20,6 +20,11 @@ public class productRep {
 	public productRep() {
 		product Product = new product("1234",111,11);	
 		listOfproduct.add(Product);
+		
+		
+		
+		
+		
 	}
 
 	public ArrayList<product> getAllproduct() {

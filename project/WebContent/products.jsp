@@ -15,7 +15,6 @@
 			productRep dao = productRep.getInstance();
 			ArrayList<product> lsitProducts = dao.getAllproduct();
 			ArrayList<product> listOfProducts = dao.getAllproduct();
-		
 		%>
 	</div>
 	<div class="content">
@@ -25,17 +24,20 @@
 		%>
 
 		<div class="">
-			<h3>상품 코드: <%=Product.getCode()%></h3>
-			<h3>재고 : <%=Product.getUnitInStocks()%></h3>
-			<h3><%=Product.getUnitPrice()%>원</h3>
-			<a href ="./product.jsp?id=<%=Product.getCode()%>">
-			상세정보
-			</a>
+			<h3>
+				상품 코드:
+				<%=Product.getCode()%></h3>
+			<h3>
+				재고 :
+				<%=Product.getUnitInStocks()%></h3>
+			<h3><%=Product.getUnitPrice()%>원
+			</h3>
+			<a href="./product.jsp?id=<%=Product.getCode()%>"> 상세정보 </a>
 		</div>
 		<%
 			}
 		%>
 	</div>
-	<jsp:include page="footer.jsp"/>
+	<jsp:include page="footer.jsp" />
 </body>
 </html>
