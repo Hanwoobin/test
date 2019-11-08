@@ -11,7 +11,7 @@
 	<%
 		String id = request.getParameter("id");
 		productRep dao = productRep.getInstance();
-		product Product = productDAO.getProductById(id);
+		product Product = dao.getProductById(id);
 	%>
 	<div class="container">
 		<div class="content">
