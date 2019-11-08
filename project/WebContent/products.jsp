@@ -1,3 +1,4 @@
+<%@page import="dao.productRep"%>
 <%@page contentType="text/html; charset=utf-8"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="dto.product"%>
@@ -11,7 +12,10 @@
 	<div class="container">
 		<p>상품목록</p>
 		<%
-			ArrayList<product> listOfProducts = productDAO.getAllproduct();
+			productRep dao = productRep.getInstance();
+			ArrayList<product> lsitProducts = dao.getAllproduct();
+			ArrayList<product> listOfProducts = dao.getAllproduct();
+		
 		%>
 	</div>
 	<div class="content">

@@ -7,7 +7,7 @@ public class product implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	private String code;
-	private String unitInStocks;
+	private long unitInStocks;
 	
 	private int unitPrice;
 	
@@ -15,7 +15,7 @@ public class product implements Serializable{
 		super();
 	}
 	
-	public product(String code, String unitInStocks,int unitPrice){
+	public product(String code, long unitInStocks,int unitPrice){
 		this.code = code;
 		this.unitInStocks = unitInStocks;
 		this.unitPrice = unitPrice;
@@ -28,10 +28,10 @@ public class product implements Serializable{
 	public void setCode(String code) {
 		this.code = code;
 	}
-	public String getUnitInStocks() {
+	public long getUnitInStocks() {
 		return unitInStocks;
 	}
-	public void setUnitInStocks(String unitInStocks) {
+	public void setUnitInStocks(long unitInStocks) {
 		this.unitInStocks = unitInStocks;
 	}
 	public int getUnitPrice() {

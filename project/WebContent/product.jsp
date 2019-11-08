@@ -1,5 +1,6 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@page import="dto.product"%>
+<%@page import ="dao.productRep" %>
 <jsp:useBean id="productDAO" class="dao.productRep" scope="session" />
 <html>
 <head>
@@ -9,6 +10,7 @@
 	<jsp:include page="menu.jsp"/>
 	<%
 		String id = request.getParameter("id");
+		productRep dao = productRep.getInstance();
 		product Product = productDAO.getProductById(id);
 	%>
 	<div class="container">
